@@ -1,0 +1,35 @@
+body{
+	
+	background-color: orange;
+
+}
+
+h1{
+	font-family: "Helvetica", sans-serif;
+
+}
+
+p{
+	font-family: "Helvetica", sans-serif;
+
+}
+
+.image{
+	height:240px;
+	width:160px;
+}
+
+ol{
+	background-color: blue;
+	font-family: Helvetica;
+}
+
+ul{
+	font-size: 48px;
+}
+
+#ol{
+	width: 50%;
+	background-color: blue;
+
+}
