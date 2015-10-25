@@ -62,8 +62,7 @@ h1 {
 }
 
 #image{
-
+	margin: 24px;
 	position: relative;
-	bottom: -800px;
-
+	bottom: -64px;
 }
