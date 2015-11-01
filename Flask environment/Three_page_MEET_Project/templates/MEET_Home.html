@@ -1,0 +1,34 @@
+
+{% extends "MEET_Template.html" %}
+
+
+		<link href = {% block css %} href={{ url_for("static", filename = "MEET_Home.css") }} {% endblock %}>
+		<title>{% block titlehead %}MEET Home{% endblock %}</title>
+
+	</head>
+
+	<body>
+
+		{% block title %}
+		<h1> Nathaniel's Homepage </h1>
+		{% endblock %}
+
+		{% block info %}
+		
+
+		<div id = "Info">
+
+			My name is Nathaniel Navarro, I am a student at MEET, and I live near Washington DC. I enjoy playing the guitar, Model UN, and ultimate frisbee.
+			
+		</div>
+
+		<div id ="image">
+
+			<img src="static/My_Face.jpg" alt="Picture of my face" height = "480" width = "480">
+
+		</div>
+
+		{% endblock %}
+			
+
+

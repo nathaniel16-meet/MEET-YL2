@@ -1,0 +1,20 @@
+{% extends "MEET_Template.html" %}
+
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" {% block css %} href={{ url_for("static", filename = "MEET_About.css") }} {% endblock %}>
+		<title>{% block titlehead %}MEET About {% endblock %}</title>
+
+	</head>
+
+	<body>
+
+		{% block title %}<h1>About Nathaniel</h1>{% endblock %}
+
+
+		{% block info %}
+
+		<div id = "About">
+			<span id = "text">I was born on April 9th, 1999 near San Francisco. At the age of 9 I moved to Israel and spent 7 years their, almost completing the 10th grade. In April of 2015 I moved back to the United States, to Washington DC. I started a new school, and have met a lot of new people. I think that I'll return to Israel some day.</span>
+		</div>
+
+		{% endblock %}

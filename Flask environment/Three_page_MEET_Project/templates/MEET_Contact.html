@@ -1,0 +1,33 @@
+{% extends "MEET_Template.html" %}
+
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet"{% block css %} href= {{ url_for("static", filename = "MEET_Contact.css")  }} {% endblock %}>
+		<title>{% block titlehead %}MEET Contact{% endblock %}</title>
+
+	</head>
+
+	<body>
+
+		{% block title %}
+		<h1>Contact Nathaniel</h1>
+		{% endblock %}
+
+		
+
+		{% block info %}
+		<div id = "text">
+
+			If you are interested in contacting me enter the following information.
+
+		</div>
+
+		<form>
+
+			<p> Enter your email: <input type = "email" value = "Email"> </p>
+			<p> Phone Number: <input type = "text" value = "Phone Number"> </p>
+			<p> Name: <input type = "text" value = "Name"> </p>
+			<p> <input type = "submit" value = "Submit"> </p>
+
+		</form>
+
+		{% endblock %}

@@ -1,0 +1,40 @@
+<html>
+	<head>
+
+		<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+		<link rel = "stylesheet" href={{ url_for("static", filename = "MEET_Template.css") }}>
+		<link rel = "stylesheet" {% block css %} {% endblock %}>
+		<title>{% block titlehead %}{% endblock %}</title>
+
+	</head>
+
+	<body>
+
+		{% block title %}
+		{% endblock %}
+		
+
+				<span class = "Banner" id = "Banner_Left">
+
+					<a href = {{ url_for("about") }} class = "Navigation_Link" id = "About_Link">About Me</a>
+
+				</span>
+
+				<span class = "Banner" id = "Banner_Middle">
+
+					<a href = {{ url_for("home") }} class = "Navigation_Link" id = "Home_Link">Home</a>
+
+				</span>
+
+				<span class = "Banner" id = "Banner_Right">
+
+					<a href = {{ url_for("contact") }} class = "Navigation_Link" id = "Contact_Link">Contact Me</a>
+
+				</span>
+
+		
+		{% block info %}
+		{% endblock %}
+
+	</body>
+</html>
